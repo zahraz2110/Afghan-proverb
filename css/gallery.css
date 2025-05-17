@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: antiquewhite;
+}
+.container{
+    background-color: rgb(133, 81, 18);
+    color: black;
+    font-family: serif;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+nav{
+  background-color: rgb(133, 81, 18);
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+nav a{
+  display: flex;
+  color: rgb(235, 232, 229);
+  font-weight: bold;
+  align-items: center;
+  padding: 1rem;
+}
+
+h2 {
+  text-align: center;
+  background-color: rgb(255, 234, 197);
+  color: black;
+  padding: 10px;
+}
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  gap: 18px;
+  padding: 10px;
+  background-color: rgb(255, 234, 197);
+}
+.item {
+  background-color: rgb(255, 219, 181);
+  border: 2.5px rgb(108, 78, 49) solid;
+  border-radius: 8px;
+  padding: 5px;
+  color: black;
+  position: relative; height: 70px;
+}
+.box{
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  background-color: rgb(255, 219, 181);
+  width: 100%;
+  height: 100%;
+}
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgb(255, 219, 181);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgb(255, 234, 197);
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item:hover .box {
+  transform: rotateY(180deg);
+}
+
+.footer {   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(133, 81, 18);
+  color: black;
+  padding: 1rem;
+}  
